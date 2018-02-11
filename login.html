@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="public1.css" />
+</head>
+<body>
+    <form method="get" action="b.html" name="form" onsubmit="return login()">
+ 
+        <p>账号：<input type="text" name="" id="myname"  /></p>
+        <p>密码：<input type="text" name="" id="psw" ></p>
+        <input type="submit" name=" "  value="登录" />
+    </form>
+    <script type="text/javascript">
+    function login(){
+        var name = document.getElementById("myname").value;
+        var mima = document.getElementById("psw").value;
+        if (name=="123"&&mima=="123") {
+            alert("登录成功");
+        }else{
+            alert("账号或密码输入错误，请重新输入密码!");
+            return mima=' ';
+        }
+    }
+    </script>
+</body>
+</html>
