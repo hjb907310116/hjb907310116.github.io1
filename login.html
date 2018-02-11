@@ -15,12 +15,12 @@
     <script type="text/javascript">
     function login(){
         var name = document.getElementById("myname").value;
-        var mima = document.getElementById("psw").value;
+        var mima = document.getElementById("mima").value;
         if (name=="123"&&mima=="123") {
             alert("登录成功");
         }else{
             alert("账号或密码输入错误，请重新输入密码!");
-            return mima=' ';
+            return mima=' ';//密码内容清空
         }
     }
     </script>
